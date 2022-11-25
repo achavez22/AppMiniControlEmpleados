@@ -37,7 +37,7 @@ public class EmpleadoController {
 	@Autowired
 	private EmpleadoService empleadoService; 
 
-	//lista de empleados
+
 	@GetMapping({"", "/","/empleados"})
 	public String listarEmpleados(@RequestParam(name = "page", defaultValue = "0") int page , 
 			Model model) { 
