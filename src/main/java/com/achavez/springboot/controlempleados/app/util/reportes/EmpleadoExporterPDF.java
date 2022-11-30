@@ -42,9 +42,6 @@ public class EmpleadoExporterPDF {
 		celda.setPhrase(new Phrase("Nombre completo", fuente));
 		tabla.addCell(celda);
 
-//		celda.setPhrase(new Phrase("Apellido", fuente));
-//		tabla.addCell(celda);
-
 		celda.setPhrase(new Phrase("Email", fuente));
 		tabla.addCell(celda);
 
@@ -82,7 +79,7 @@ public class EmpleadoExporterPDF {
 
 		com.lowagie.text.Font fuente = FontFactory.getFont(FontFactory.HELVETICA_BOLD);
 		fuente.setColor(Color.black);
-		fuente.setSize(22);
+		fuente.setSize(24);
 
 		Paragraph titulo = new Paragraph("Lista de empleados", fuente);
 		titulo.setAlignment(Paragraph.ALIGN_CENTER);
