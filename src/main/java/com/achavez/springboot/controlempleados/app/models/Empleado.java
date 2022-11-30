@@ -42,11 +42,13 @@ public class Empleado {
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern= "yyyy-MM-dd")
 	private Date fechaNacimiento;
-
+	
+	
+	//constructor sin argumentos
 	public Empleado() {
 		
 	}
-
+	//constructor con todos los argumentos
 	public Empleado(Long id, @NotEmpty String nombre, @NotEmpty String primerApellido, @NotEmpty String segundoApellido,
 			@NotEmpty @Email String email, @NotNull String telefono, @NotNull double salario, @NotEmpty String sexo,
 			@NotNull Date fechaNacimiento) {
