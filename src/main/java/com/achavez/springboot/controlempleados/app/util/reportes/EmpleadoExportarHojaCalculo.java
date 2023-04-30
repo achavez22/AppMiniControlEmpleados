@@ -101,28 +101,33 @@ public class EmpleadoExportarHojaCalculo {
 			celda.setCellStyle(estilo);
 			
 			celda = fila.createCell(3);
-			celda.setCellValue(empleado.getEmail());
+			celda.setCellValue(empleado.getSegundoApellido());
 			hoja.autoSizeColumn(3);
 			celda.setCellStyle(estilo);
 			
 			celda = fila.createCell(4);
-			celda.setCellValue(empleado.getFechaNacimiento().toString());
+			celda.setCellValue(empleado.getEmail());
 			hoja.autoSizeColumn(4);
 			celda.setCellStyle(estilo);
 			
 			celda = fila.createCell(5);
-			celda.setCellValue(empleado.getTelefono());
+			celda.setCellValue(empleado.getFechaNacimiento().toString());
 			hoja.autoSizeColumn(5);
 			celda.setCellStyle(estilo);
 			
 			celda = fila.createCell(6);
-			celda.setCellValue(empleado.getSexo());
+			celda.setCellValue(empleado.getTelefono());
 			hoja.autoSizeColumn(6);
 			celda.setCellStyle(estilo);
 			
 			celda = fila.createCell(7);
-			celda.setCellValue(empleado.getSalario());
+			celda.setCellValue(empleado.getSexo());
 			hoja.autoSizeColumn(7);
+			celda.setCellStyle(estilo);
+			
+			celda = fila.createCell(8);
+			celda.setCellValue(empleado.getSalario());
+			hoja.autoSizeColumn(8);
 			celda.setCellStyle(estilo);
 		}
 	}
